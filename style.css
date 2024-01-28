@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* overflow: hidden; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.ball-top {
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -20%;
+    top: -20%
+}
+.ball-bottom {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    bottom: -30%;
+    right: -50%;
+}
+.main-card {
+    width: 85%;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+.bubbles {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+    z-index: -1;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.victor-img {
+    width: 120px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.name h1 {
+    font-size: 1.2rem;
+    color: hsl(229, 23%, 23%);
+}
+.name p {
+    color: hsl(227, 10%, 46%);
+    font-size: 1.2rem;
+    opacity: .6;
+}
+.london {
+    color: hsl(227, 10%, 46%);
+    font-size: 1rem;
+    opacity: .6;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    border-top: 1px solid hsla(227, 10%, 46%, .6);
+}
+.left, .middle, .right {
+    color: hsl(229, 23%, 23%);
+    text-align: center;
+    padding-top: 30px;
+    z-index: 1;
+}
+.stats {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.description {
+    color: hsl(227, 10%, 46%);
+    font-size: .8rem;
+    opacity: .6;
+}
