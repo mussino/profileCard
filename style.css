@@ -5,7 +5,7 @@
     padding: 0;
 }
 body {
-    /* overflow: hidden; */
+    overflow: hidden;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,22 +15,27 @@ body {
 }
 .ball-top {
     background-repeat: no-repeat;
-    object-fit: cover;
+    object-fit: none;
     position: absolute;
-    width: 300px;
-    height: 300px;
-    left: -20%;
-    top: -20%
+    object-position: 125% 100%;
+    max-width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
 }
 .ball-bottom {
+    background-repeat: no-repeat;
+    object-fit: none;    
     position: absolute;
-    width: 400px;
-    height: 400px;
-    bottom: -30%;
-    right: -50%;
+    object-position: -20% -8%;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    right: 0;
 }
 .main-card {
     width: 85%;
+    height: auto;
     background-color: white;
     border-radius: 20px;
     position: relative;
@@ -101,3 +106,4 @@ body {
     font-size: .8rem;
     opacity: .6;
 }
+
