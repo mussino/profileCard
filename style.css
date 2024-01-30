@@ -13,27 +13,30 @@ body {
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
 }
-.ball-top {
+.top-image {
+    background-image: url('./images/bg-pattern-top.svg');
+    background-position: right bottom;
     background-repeat: no-repeat;
-    object-fit: none;
+    width: 70%;
+    height: 300px;
     position: absolute;
-    object-position: 125% 100%;
-    max-width: 100%;
-    height: auto;
-    left: 0;
     top: 0;
+    left: 0;
 }
-.ball-bottom {
+.bottom-image {
+    background-image: url('./images/bg-pattern-bottom.svg');
+    background-color: top left;
     background-repeat: no-repeat;
-    object-fit: none;    
+    width: 70%;
+    height: 300px;
     position: absolute;
-    object-position: -20% -8%;
-    width: 100%;
-    height: auto;
     bottom: 0;
     right: 0;
 }
 .main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 85%;
     height: auto;
     background-color: white;
@@ -106,4 +109,22 @@ body {
     font-size: .8rem;
     opacity: .6;
 }
-
+@media (min-width: 1440px) {
+    .top-image {
+        width: 700px;
+        height: 600px;
+    }
+    .bottom-image {
+        width: 700px;
+        height: 600px;
+        bottom: -50px;
+    }
+    .main-card {
+        width: 400px;
+    }
+}
+@media (min-width: 768px) {
+    .main-card {
+        width: 400px;
+    }
+}
